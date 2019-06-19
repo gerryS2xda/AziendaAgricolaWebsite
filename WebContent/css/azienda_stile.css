@@ -1,0 +1,95 @@
+body{
+	width: 100%;
+	margin:0;
+}
+
+h1, h2{
+	text-align: center;
+}
+
+footer{
+	margin-top: 50px;
+}
+
+#main_content{
+	margin-top: -14px;
+}
+
+#container{
+	margin-top: -70px;
+}
+
+#pres{
+	margin-left: 25%;
+	margin-right: 25%;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: white;
+	background-color: #B4975A;
+	outline: 1px solid #fff;
+	outline-offset: -5px;
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: 66px;
+}
+
+.preshr{
+	border-color: #B4975A;
+	width: 70%;
+}
+
+.azProd{
+	color: #B4975A;
+}
+
+.azInfo{
+	font-family: Georgia;
+	font-weight: bold;
+	line-height: 30px;
+	font-size: 18px;
+	color: #B4975A;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#imgStabilimento{
+	width: 100%;
+	height: auto;
+}
+
+.images{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px; 
+}
+
+.images_div{
+	text-align:center;
+}
+
+@media screen and (max-width: 950px){
+	#media,
+	#media2{
+		display: none !important;
+	}
+	
+	.azInfo{
+		line-height: 20px;
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.images{
+		display: none;
+	}
+	
+	.azInfo{
+		line-height: 10px;
+		font-size: 10px;
+	}
+}

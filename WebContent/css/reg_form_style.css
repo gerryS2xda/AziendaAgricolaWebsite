@@ -1,0 +1,119 @@
+::placeholder {
+  color: #d1d1d1;
+}
+
+body{
+	width: 99%;
+	margin: 0;
+}
+
+footer{
+	margin-top: 100px;
+}
+
+#box_form {
+	margin: 0;
+	text-align: left;
+}
+
+#main_content {
+	width: 60%;
+	position: relative;
+	left: 20%;
+	margin-top: 2%;
+}
+
+p.txt_error{
+	color: red;
+	display: inline;
+	margin-left: 3%;
+}
+
+fieldset{
+	margin-top: 5%;
+	margin-bottom: 3%;
+}
+
+
+input[type=text], input[type=email], input[type=tel]{
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	height: 32px;
+	width: 100%;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	
+		box-shadow: 0 1px 0 0 #9e9e9e;
+	-webkit-box-sizing: content-box;
+        box-sizing: content-box;
+	-webkit-transition: border .3s, -webkit-box-shadow .3s;
+	transition: border .3s, -webkit-box-shadow .3s;
+	transition: box-shadow .3s, border .3s;
+	transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+}
+
+input[type=text]:focus,
+input[type=email]:focus, 
+input[type=tel]:focus{
+	border-bottom: 1px solid #26a69a;
+	-webkit-box-shadow: 0 1px 0 0 #26a69a;
+        box-shadow: 0 1px 0 0 #26a69a;
+}
+
+
+input[type=text]:focus + label,
+input[type=email]:focus + label,
+input[type=tel]:focus + label{
+  color: #26a69a;
+}
+
+
+
+.input_field{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.input_field > label {
+  color: #9e9e9e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  cursor: text;
+  -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
+  transition: color .2s ease-out, -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out, color .2s ease-out;
+  transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  text-align: initial;
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+}
+
+.input_field > label.active {
+	color: #26a69a;
+  -webkit-transform: translateY(-14px) scale(0.8);
+          transform: translateY(-14px) scale(0.8);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+#but_submit{
+	text-align: center;
+}
+
+#title {
+	text-align: center;
+	text-weight: bold;
+	font-size: 40px;
+	margin: auto;
+}

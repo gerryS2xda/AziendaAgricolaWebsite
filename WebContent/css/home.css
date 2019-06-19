@@ -1,0 +1,310 @@
+.mySlides {
+	display: none;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* Login area style */
+.logArea{
+	z-index: 11;
+}
+
+/* Header style */
+header {
+	background-color: black;
+	width: 100%;
+	height: 64px;
+	position: fixed;
+	z-index: 3;
+}
+
+.logo {
+    text-align: center;
+    position: relative;
+    bottom: 15%;
+}
+
+.logo img {
+    width: 75px;
+    height: 79px;
+}
+
+.menu_icon{
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	right: 2%;
+	top: 22%;
+}
+
+.close_menu{
+	display: none;
+	position: absolute;
+	right: 4.5%;
+	top: 30%;
+}
+
+.close_menu img{
+    width: 28px;
+}
+
+.close_menu a{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	position: relative;
+	bottom: 8px;
+	left: 5px;
+	font-size: 16px;
+}
+
+.close_menu a:hover, .close_menu a:focus{
+	color: #b4975a;
+	transition: all 0.3s ease-in;
+}
+
+/* Main content style */
+#main_content{
+    margin-right: 0;	/* si cambia in base a valore di width di right bar */
+}
+
+.slideshow-container {
+  z-index: 1;
+}
+
+
+.mySlides img{
+    width: 100%;
+}
+
+.mySlides {
+    text-align: center;
+}
+
+.text {
+	z-index: 3;
+	position: absolute;
+    top: 30%;
+	color: white;
+    margin-left: 15%; /* si cambia in base a valore di width di right bar (width = 200px --> da 15% passa a 5% */
+	font-size: 32px;
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: 3px 1px 1px #333;
+	width: 75%;
+}
+
+.entra{
+	z-index: 3;
+	position: absolute;
+	top: 60%;
+	left: 45%;
+}
+
+.entra img {
+	width: 40px;
+}
+
+.entra a {
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: 3px 1px 1px #333;
+}
+
+.entra a:hover {
+    color: #b4975a;
+    transition: all 0.3s ease-in;
+}
+
+.entra a span{
+	position: relative;
+	bottom: 12px;
+	right: 8px;
+}
+
+/* vertical navigation bar style */
+#right_sidebar{
+	display: none;
+	width: 300px;	/* width vale 200px = 300px -100px (right) */ 
+	height: 100%;
+	z-index: 3;
+	position: fixed;
+	margin-top: 64px;
+	top: 0;
+	right: -100px;	/* per evitare effetti grafici indesiderati con testo dei link */
+}
+
+.vertical-menu {
+    background-color: black;
+    height: 100%;
+}
+
+.vertical-menu a {
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    color: #b4975a;
+    transition: all 0.3s ease-in;
+}
+
+/* cart style */
+.cart_container{
+	width: 0;
+	float: left;
+	margin-right: 48px;
+	margin-top: -10px;
+}
+
+.contatore {
+	border-radius: 75%;
+    background: #f08c1e;
+    color: #fff;
+    float: left;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    position: relative;
+    bottom: 30px;
+    left: 18px;	/* cambia in base a margin-left di .cart (18 di partenza + 0)*/
+}
+
+.cart {
+    width: 36px;
+    height: 24px;
+    margin-left: 0;
+    margin-top: 4px;  
+}
+
+.count_vert {
+	width: 16px;
+	left: 20px;
+	bottom: 36px;
+}
+
+.cart_vert {
+	width: 35px;
+	height: 30px;
+}
+
+/* Footer style and media query for him*/
+footer{
+	z-index: 4;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+@media screen and (max-height: 460px){
+	footer{
+		display: none;
+	}
+}
+
+/* altre media query */
+@media screen and (max-width: 600px) and (max-height: 300px){
+	.text {
+       top: 45%;
+	   font-size: 20px;
+	   font-weight: bold;
+	   font-style: italic;
+	   width: 60%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) and (max-height: 400px){
+	.text {
+       top: 45%;
+	   font-size: 24px;
+	   font-weight: bold;
+	   font-style: italic;
+	   width: 65%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-height: 401px) and (max-height: 620px){
+	.mySlides img{
+        position: relative;
+        top: 60px;
+        height: 500px
+    }
+
+	.text {
+       top: 28%;
+       font-size: 24px;
+       font-weight: bold;
+       font-style: italic;
+       width: 70%;
+    }
+
+    .entra{
+		top: 56%;
+		left: 40%;
+	}
+}
+
+@media screen and (max-height: 620px) and (max-width: 500px) and (min-height: 401px){
+    
+	.text {
+       top: 20%;
+       font-size: 20px;
+       font-weight: bold;
+       font-style: italic;
+       width: 60%;
+    }
+
+    .entra{
+		top: 55%;
+		left: 40%;
+	}
+}
+
+@media screen and (max-height: 620px) and (max-width: 360px){
+    .mySlides img{
+        position: relative;
+        top: 60px;
+        height: 500px
+    }
+    
+	.text {
+       display: none;
+    }
+
+	.entra{
+		top: 40%;
+		left: 40%;
+	}
+
+}
+
+@media screen and (max-height: 400px){
+    .mySlides img{
+        position: relative;
+        top: 60px;
+        height: 500px
+    }
+    
+	.text {
+       display: none;
+    }
+
+	.entra{
+		top: 40%;
+		left: 40%;
+	}
+
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Storage</display-name>
+  <description>Deployment descriptor of web application for project TSW</description>
+  <icon>
+    <small-icon>images/icon_web_window.jpg</small-icon>
+    <large-icon>images/icon_web_window_32.jpg</large-icon>
+  </icon>
+  <welcome-file-list>
+    <welcome-file>HomePage.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>RegistrationController</servlet-name>
+    <servlet-class>com.project.controller.RegistrationController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>com.project.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CatalogoController</servlet-name>
+    <servlet-class>com.project.controller.CatalogoController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CartController</servlet-name>
+    <servlet-class>com.project.controller.CartController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewsController</servlet-name>
+    <servlet-class>com.project.controller.NewsController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductController</servlet-name>
+    <servlet-class>com.project.controller.ProductController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UtenteController</servlet-name>
+    <servlet-class>com.project.controller.UtenteController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PostaController</servlet-name>
+    <servlet-class>com.project.controller.PostaController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FatturaController</servlet-name>
+    <servlet-class>com.project.controller.FatturaController</servlet-class>
+  </servlet>
+</web-app>

@@ -1,0 +1,112 @@
+body {
+	width: 100%;
+	margin: 0;
+}
+
+.news_footer{	
+	clear:  both;
+}
+
+.title {
+	text-align: center;
+	text-weight: bold;
+	font-size: 40px;
+	color: white;
+	background-color: rgba(180,151,90,0.85);
+	width: 85%;
+	margin-left: 7.5%;
+}
+#t2 {
+	color: rgba(180,151,90,0.85);
+	font-weight: bold;
+	font-size: 30px;
+}
+
+hr {
+	width: 85%;
+	border-bottom: 6px solid black;
+}
+
+.google-maps {
+    position: relative;
+    margin-left: 8%;
+    padding-bottom: 15%;	/* Definisco l'aspect -ratio */
+    margin-bottom: 10%;
+    overflow: hidden;
+    top: 12px;
+}
+.google-maps > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50% !important;
+  height: 60% !important;
+}
+
+.info {
+	margin-left: 51%;
+	text-weight: bold;
+	font-size: 20px;
+}
+
+.posta img {
+	width: 40px;
+	margin-left: 10%;
+}
+
+.posta span {
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 1%;
+	color: white;
+}
+
+.posta {
+	position: relative;
+}
+
+.modulo {
+	background-color: rgba(180,151,90,0.85);
+	margin-top: -10%;
+	padding: 1%;
+	margin-bottom: 3%;
+}
+
+.modulo hr {
+	border-bottom: 3px solid black;
+}
+
+.submit {
+	clear: both;
+	text-align: center;
+	width: 300px;
+	margin-left: 10%;
+}
+
+.all {
+	float: left;
+	margin-left: 10%;
+	line-height: 25px;
+}
+
+input[type=text], input[type=email]{
+	width: 300px;
+}
+
+#admin_selector{
+	width: 218px;
+}
+
+.new_mail_txt_err{
+	display: none;
+	color: red;
+	font-size: 14px;
+	line-height: 0px;
+}
+
+#new_mail_content{	/* style of textarea*/
+	margin-top: 20px;
+	width: 300px;
+}

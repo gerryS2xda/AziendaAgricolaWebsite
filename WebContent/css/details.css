@@ -1,0 +1,45 @@
+body{ 
+	width: 100%;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+footer{
+	display: none; /* dopo settata posizione esatta viene reso visibile (vedi JS) */
+	margin-top: 40px;
+}
+
+.footer_small_body{
+	position: relative;
+	top: 160px;
+}
+
+/* style per il main content */
+#details td{
+	padding-right: 40px;
+	border: thin solid silver;
+}
+
+.tb_deriv_content{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#table_deriv{
+	border-spacing: 0px;
+}
+
+#table_deriv td{
+	border: thin solid black;
+	padding-right: auto;
+	padding-left: 20px;
+}
+
+#table_deriv td.td_head{
+	padding: 5px;
+}
+
+#back_to_catalogo{
+	padding-top: 20px;
+	text-align: center;
+}

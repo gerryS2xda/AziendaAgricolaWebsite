@@ -1,0 +1,108 @@
+body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#close_btn{
+	position: absolute;
+	width: 32px;
+	left: 92%;
+	top: 1%;
+}
+
+#logo_img{
+	width: 100px;
+	height: 90px;
+	text-align: center;
+}
+
+.login-page {
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 4% 0 4%;
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 12;
+}
+
+.form {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  z-index: 13;
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #B4975A;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #B4975A;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message .reg_link {
+  color: #B4975A;
+  text-decoration: none;
+}
+
+
+.err_txt, .err_txt_reg{
+	position: relative;
+	color: red;
+	font-size:15px;
+	bottom: 5px;
+}
+
+.err_usr_pwd{
+	color: red;
+	font-size:15px;
+	position: relative;
+	bottom: 5px;
+}
+
+
+#errUserArea,
+#errPwdArea{
+	display:none;
+}
+
+.punto_Esc_image{
+	width: 20px;
+	height: 20px;
+}

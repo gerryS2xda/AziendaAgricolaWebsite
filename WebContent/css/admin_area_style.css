@@ -1,0 +1,819 @@
+/* selettori in base al tipo di elemento */
+html, body{height: 100%; }
+body{
+	margin: 0;
+	overflow-x: hidden;
+	font-family: sans-serif; 
+	font-size:12px; 
+	background: none repeat scroll 0 0 #eeeeee;	
+}
+
+* {
+	outline:none !important;
+}
+
+label{
+	display: inline-block;
+	margin-bottom: 16px;
+	margin-right: 10px;
+}
+
+textarea{
+	width: 40%;
+}
+
+.span_hide{
+	display: none;
+}
+
+/* style for more element */
+.txtfield_long{
+	width: 37%;
+	margin-bottom: 16px;
+	margin-right: 10px;
+}
+
+/* Header bar */
+#header_part {
+	height: 38px;
+	position: fixed;
+	width: 100%;
+	background-color: #1f262d;
+	z-index: 3;
+}
+
+#txt_logo{
+	position: relative;
+	color: #FFFFFF;
+	font-size: 20px;
+	top: 4px;
+	bottom: 9px;
+	left: 20px;
+}
+
+#welcome_txt{
+	position: relative;
+	font-size: 16px;
+	color: #FFFFFF;
+	top:4px;
+	bottom:9px;
+	left: 40%;
+}
+
+#logout{
+	position: relative;
+	left: 75%;
+	top: 5px;
+	color: white;
+	text-decoration: none;
+}
+
+#logout:hover{
+	padding: 12px;
+	background-color: #27a9e3;
+}
+
+#logout:focus{
+	padding: 12px;
+	background-color: #27a9e3;
+	color: black;
+}
+
+#logout img{
+	position: relative;
+	width: 16px;
+	height: 16px;
+	top: 4px;
+	padding-right: 4px;
+}
+
+/* Sidebar Navigation */
+#sidebar {
+	top: 38px;
+	display: block;
+	float: left;
+	position: fixed;
+	width: 220px;
+	bottom: 0px;
+	background: #2E363F;
+}
+
+#sidebar > ul {
+	list-style: none;
+	margin: 0px 0 0;
+	padding: 0;
+	position: absolute;
+	width: 220px;
+	border-bottom: 1px solid #37414b;
+}
+
+#sidebar > ul > li {
+	display: block;
+	position: relative;
+    border-top: 1px solid #37414b;
+    border-bottom: 1px solid #1f262d;
+	line-height: 20px;
+}
+
+#sidebar > ul > li > a {
+	text-decoration: none;
+    padding: 10px 0 10px 15px;
+    display: block;
+    color: #939da8;
+}
+
+#sidebar > ul > li.active {
+    background-color: #27a9e3; border-bottom: 1px solid #27a9e3;  border-top: 1px solid #27a9e3;
+}
+
+#sidebar > ul > li.active a{ color:#fff; text-decoration:none;}
+
+#sidebar > ul > li.active > a {
+	background: url("../images/menu-active.png") no-repeat scroll right center transparent !important;
+	text-decoration:none;
+}
+
+#sidebar > ul > li > a:hover {
+	background-color: #27a9e3; color:#fff;
+}
+
+/* Content */
+#content_page{
+	background: none repeat scroll 0 0 #eeeeee;
+	margin-left: 220px;
+	margin-right: 0;
+	position: relative;
+	min-height:100%;
+	width: auto;
+}
+
+#dashboard_content{
+	padding-bottom: 5%;
+}
+
+/* Style per la lista di blocchi nella Dashboard page */
+.row_block_info {
+	top: 32px;
+	width:100%;
+	position:relative;
+	float:left;
+	margin-top:10px;
+}
+
+.list_block{
+	display: block;
+	list-style: none outside none;
+	margin: 15px 0;
+}
+
+.list_block li{
+	position:relative;
+	float: left;
+	line-height: 18px;
+	margin: 0 30px 30px 0px;
+	padding: 0 10px;
+	text-align: center;
+	border: 0 solid #e7e7e7;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,0.15);
+	width: 20%;
+	min-height:100px;
+	background: #FFFFFF;
+}
+
+.block_txt{
+	position: relative;
+	color: black;
+	font-size: 16px;
+	top: 50px;
+}
+
+.info_dash_text{
+	display: block;
+	position: relative;
+	color: black;
+	font-size: 26px;
+	top: 30px;
+}
+
+/* Contenuto relativo ai dati personali... Dashboard*/
+.row_table_data{
+	width:100%;
+}
+
+#personal_data{
+	width: 50%;
+}
+
+.widget-box {
+    background: none repeat scroll 0 0  #F9F9F9;
+    border-left: 1px solid #CDCDCD;
+    border-top: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+    clear: both;
+	width: 90%;
+    position: relative;
+	top: 30px;
+	bottom: 16px;
+	left: 36px;
+	margin-right: 90px;
+}
+
+.widget-title{
+    color: black;
+    height: 36px;
+	border-bottom: 1px solid #CDCDCD;
+}
+
+.category_text{
+	position: relative;
+	left: 36%;
+	top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+    color: #666;
+}
+
+.widget-title span.icon {
+    padding: 0px 20px 15px 0px;
+    border-right: 1px solid #dadada;
+}
+
+.icon_arrow{
+	position:relative;
+	width:auto;
+	height: auto;
+	top: 7px;
+	left: 11px;
+}
+
+.widget-content {
+    padding: 15px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.text_content{
+	display: block;
+	font-size: 14px;
+	
+}
+
+/* Email arrivate style */
+#email_list{
+	width: 50%;
+	position: absolute;
+}
+
+.widget-box_email {
+    background: none repeat scroll 0 0  #F9F9F9;
+    border-left: 1px solid #CDCDCD;
+    border-top: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+    clear: both;
+	width: 90%;
+    position: relative;
+	top: 30px;
+	bottom: 16px;
+	left: 16px;
+}
+
+.mail_arrivate{
+    margin: 0;
+    padding: 0;
+}
+
+.mail_arrivate li{
+    border-bottom: 1px dotted #AEBDC8;
+    list-style: none outside none;
+    padding: 0;
+	line-height: 20px;
+}
+
+.widget_content_mail {
+	padding-left: 15px;
+	padding-right: 15px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.email_txt_div{
+	padding-top: 10px;
+}
+
+.email_txt_body {
+    color: #666666;
+    font-size: 14px;
+}
+
+.email_txt_body_link {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+/* category style */
+.section{
+	position:relative;
+	float:left;
+	height: 32px;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.category_style{
+	position:relative;
+	left: 5%;
+	top: 32px;
+}
+
+.hr_line_border{
+	border-bottom: 1px solid #CDCDCD;
+	margin-right: 10%;
+	top: 32px;
+}
+
+.title_content_page {
+    color: #555555;
+    font-size: 28px;
+    font-weight: normal;
+    float: none;
+    text-shadow: 0 1px 0 #ffffff;
+   	top: 38px;
+	margin-right: 10%;
+	text-align: center;
+}
+
+.p_content_page{
+	font-size: 14px;
+	color: #555555;
+	top: 32px;
+	margin-right: 10%;
+}
+
+/* Gestione account area style */
+#search_area, #user_data{
+	position: relative;
+	top: 32px;
+	left: 5%;
+}
+
+#user_data{
+	font-size: 14px;
+	color: black;
+	line-height: 30px;
+}
+
+#search_area{
+	position: relative;
+	top: 32px;
+	left: 5%;
+}
+
+.input_search_bar{
+	position: relative;
+	font-size: 16px;
+	height: 24px;
+	border: 1px solid grey;
+	background: #f1f1f1;
+	left: 4px;
+}
+
+.div_icon_search{
+	position: relative;
+	height: 28px;
+	top: 9px;
+	display:inline-block; 
+	background-color:grey;
+}
+
+.icon_search{
+	width: 20px;
+	height: 20px;
+	margin: 4px;
+}
+
+#add_admin{
+	margin-left: 0;
+    margin-top: 48px;
+}
+
+#result_search_area{
+	position:relative;
+	left: 5%;
+	top: 64px;
+}
+
+#user_account_area{
+	padding-bottom: 10%;
+}
+
+.button_area_user{
+	position:relative;
+	left: 5%;
+	right: 5%;
+	top: -16px;
+}
+
+.button_area_user button{
+	margin-right: 16px;
+}
+
+/* Style tabella dei dati */
+.table_scroll{
+	height: 250px;
+	overflow-y: auto;
+	overflow-x: auto;
+	margin-right: 15%;
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+
+.table_data{
+	width: 100%;
+	display: table;
+	border-radius: 0px;
+	border-collapse: separate;
+	background-color: transparent;
+	border-spacing: 0;
+	border-bottom: 1px solid #555555;
+	border-right: 1px solid #555555;
+}
+
+.table_data tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.table_data th {
+    height: auto;
+    font-size: 12px;
+    padding: 4px;
+    border-bottom: 0;
+    text-align: center;
+    color: #666666;
+	background: #efefef;
+	border-left: 1px solid #555555;
+	font-weight: bold;
+	line-height: 20px;
+	display: table-cell;
+	border-top: 1px solid #555555;
+}
+
+.table_data td{
+	background-color: #f9f9f9;
+	border-left: 1px solid #555555;
+	padding: 8px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: top;
+    border-top: 1px solid #555555;
+}
+
+.th_short{
+	width: 15%;
+}
+
+.table_data th.th_empty{
+	width: 5%;
+}
+
+.td_hide{	/* se la tabella contiene dati di servizio che non devono essere mostrati */
+	display: none;
+}
+
+/* Gestione sito area style */
+#product_area, #news_area{
+	position: relative;
+	left: 5%;
+	top: 48px;
+}
+
+#news_section{
+	padding-top: 10px;
+	margin-bottom: 60px;
+}
+
+.button_area{
+	margin-top: 20px;
+	margin-left: 10%;
+}
+
+#show_prod, #show_news, #hide_prod{
+	margin-left: 16px;
+}
+
+.prod_txt_err, .news_txt_err{
+	color: red;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+.prod_txt_err_table, .account_text_err, .news_txt_err_table{
+	color: red;
+	font-size: 12px;
+	line-height: 0px;
+}
+
+input[type=number]{
+	width: 50px;
+	text-align: center;		
+}
+
+.price_input{
+	width: 80px;
+	text-align: center;	
+}
+
+/* Casella di posta styles */
+.table_content_posta{
+	heigth: 400px;
+}
+
+#mailbox_nav, #posta_arrivata, #posta_inviata{
+	position:relative;
+	left: 5%;
+	top: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#mailbox_nav a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #555555;
+	margin-right: 10%;
+	line-height: 30px;
+}
+
+#mailbox_nav a:hover, #mailbox_nav a:focus{
+	color: blue;
+}
+
+.hr_line_border_mailbox, #mailbox p{
+	position: relative;
+	left: 5%;
+	margin-right: 10%;
+	top: 32px;
+	margin-bottom: 20px;
+}
+
+.table_data td.td_mail_object{
+	overflow: hidden;
+	line-height: 20px;
+	text-align: left;
+}
+
+.hide_td{	/* elementi da nascondere per scopi implementativi (es.ottenere dati) */
+	display: none;	
+}
+
+#submit_mail{
+	margin-left: 10%;
+}
+
+.email_id{
+	display: none;	
+}
+
+.no_mail_txt{
+	text-align: center;
+	margin-right: 10%;
+	font-size: 16px;
+}
+
+.tr_bold{
+	font-weight: bold;
+}
+
+/* style for popup new mail (scrivi) */
+.popup_body{
+	background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	position: fixed;
+	width: 100%;
+	padding: 8% 0 0;
+	margin: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom:0;
+	z-index: 5;
+}
+
+#scrivi_mail{
+	display: none;
+}
+
+#scrivi_mail form {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 480px;
+  margin: 0 auto 100px;
+  padding: 40px;
+  text-align: left;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  z-index: 6;
+}
+
+#scrivi_mail form div{
+	text-align: center;
+	margin-top: 20px;
+}
+
+#scrivi_mail form div button{
+	margin-left: 5%;
+}
+
+#scrivi_mail h1 {
+    color: #555555;
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-shadow: 0 1px 0 #ffffff;
+	text-align: center;
+}
+
+#mail_dest{
+	width: 93%;
+	margin-bottom: 16px;
+	margin-right: 10px;
+}
+
+#mail_object{
+	width: 83.3%;
+	margin-bottom: 16px;
+	margin-right: 10px;
+}
+
+#scrivi_mail form textarea{
+	width: 97%;
+}
+
+.new_mail_txt_err{
+	display: none;
+	color: red;
+	font-size: 14px;
+	line-height: 0px;
+}
+
+/* style for popup 'Contenuto Email' */
+#content_popup, #risp_mail, #write_m, #email_id{
+	display: none;	
+}
+
+#content_popup_area {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 480px;
+  margin: 0 auto 100px;
+  padding: 40px;
+  text-align: left;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  z-index: 6;
+}
+
+.content_pop_button_area{
+	text-align: center;
+	margin-top: 20px;
+	margin-right: 5%;
+}
+
+#content_popup_area div button{
+	margin-left: 10%;
+}
+
+#content_popup_area h1 {
+    color: #555555;
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-shadow: 0 1px 0 #ffffff;
+	text-align: center;
+}
+
+#content_popup_area span{
+	font-size: 14px;
+	line-height: 22px;	
+}
+
+/* style for popup 'Contenuto Email' */
+#news_content_popup{
+	display: none;	
+}
+
+#news_content_popup_area {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 480px;
+  margin: 0 auto 100px;
+  padding: 40px;
+  text-align: left;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  z-index: 6;
+}
+
+#news_content_popup_area div button{
+	margin-left: 10%;
+}
+
+#news_content_popup_area h1 {
+    color: #555555;
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-shadow: 0 1px 0 #ffffff;
+	text-align: center;
+}
+
+#news_content_edit{	/* style textarea */
+	width: 97%;
+	overflow: scroll;
+}
+
+/* style for responsive */
+#content_page{
+	margin-left: 20px;	
+}
+
+#sidebar{
+	display: none;
+}
+
+#side_back{
+	width: 20px;	/* si usa per impostare il range di visibilita' per attivare l'evento relativo alla barra */
+	height: 100%;
+	position: fixed;
+}
+
+/* media query for header nav bar */
+@media screen and (max-width: 520px){
+	#welcome_txt{
+		left: 20%;
+		top: 8px;
+	}
+
+	#logout{
+		left: 40%;
+	}
+
+	#txt_logo{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 521px) and (max-width: 650px){
+	#welcome_txt{
+		left: 20%;
+	}
+
+	#logout{
+		left: 40%;
+	}
+}
+
+@media screen and (min-width: 651px) and (max-width: 780px){
+	#welcome_txt{
+		left: 30%;
+	}
+
+	#logout{
+		left: 50%;
+	}
+}
+
+@media screen and (min-width: 781px) and (max-width: 900px){
+	#welcome_txt{
+		left: 30%;
+	}
+
+	#logout{
+		left: 60%;
+	}
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px){
+	#logout{
+		left: 66%;
+	}
+}
+
+/* media query for content page */
+/* for dashboard page */
+@media screen and (max-width: 900px){	
+	.list_block li{
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	#email_list{
+		display: none;
+	}
+
+	#personal_data{
+		width: 100%;
+	}
+}
+

@@ -1,0 +1,133 @@
+body{
+	width: 100%;
+	margin: 0;
+}
+
+footer{
+	display: none; /* viene reso visibile dopo aver caricato tutto il contenuto del catalogo */
+	margin-top: 20px;
+}
+
+/* style for main content */
+#main_content{ /* viene reso visibile dopo aver caricato tutto il contenuto del catalogo con i dati presi dal DB */
+	display: none;
+}
+
+h1{
+	clear: both;
+	text-align: center;	
+}
+
+.separator_colomn{ 
+	padding-left: 100px;
+	padding-right: 60px;
+}
+
+#order{
+	position: relative;
+	left: 70%;
+	margin-bottom: 10px;
+}
+
+#view_cart_button{
+	clear: both;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+
+.text_barrato{
+	text-decoration: line-through;
+	margin-right: 16px;
+}
+
+.sconto_txt{
+	color: red;
+}
+
+.prodotto{
+	float: left;
+	margin-left: 10%;
+}
+
+.image_prod{
+	float: left;
+}
+
+.text_prod{
+	float: left;
+	position: relative;
+	bottom: 0;
+	left: 10%;
+}
+
+/* media query setting for navBar */
+@media screen and (min-width: 840px){
+	#main_content{
+  		margin-right: 0;
+  	}
+}
+
+@media screen and (max-width: 839px){
+  	#order{
+		left: 38%;
+		margin-bottom: 50px;
+	}
+
+	.prodotto{
+		margin-left: 1%;
+	}
+
+	#main_content{
+		overflow-x:hidden;
+	}
+}
+
+@media screen and (min-width: 280px) and (max-width: 500px){
+	#order{
+		left: 18%;
+		margin-bottom: 30px;
+	}
+
+	.prodotto{
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (min-width: 501px) and (max-width: 920px){
+	#main_content{
+		margin-left: 15%;
+	}
+
+	.prodotto{
+		margin-left: 3%;
+		margin-right: 4%;
+		margin-top: 20px;
+	}
+	
+	#order{
+		left: 18%;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (min-width: 921px) and (max-width: 1040px){
+	.prodotto{
+		margin-left: 2%;
+		margin-right: 5%;
+		margin-bottom: 30px;
+	}
+
+	#order{
+		left: 60%;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (min-width: 1041px){
+	.prodotto{
+		margin-bottom: 30px;
+	}
+}
